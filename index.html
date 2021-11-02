@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Authentication</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="login-options">
+        <ul>
+          <li class="item">
+            <lable>Google 로그인</lable>
+            <button>Sign In with Google</button>
+          </li>
+          <li class="item">
+            <lable>Email 로그인</lable>
+            <form class="form">
+              <small>Email</small>
+              <input type="text" id="email" placeholder="Enter email" />
+              <small>Password</small>
+              <input type="text" id="password" placeholder="Enter password" />
+              <button class="btn" type="submit">로그인</button>
+              <button class="btn" type="submit">회원 가입</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
