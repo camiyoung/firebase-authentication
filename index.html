@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="login-options">
+      <div class="login-area" id="login-area">
         <ul>
           <li class="item">
             <lable>Google 로그인</lable>
-            <button>Sign In with Google</button>
+            <button id="google">Sign In with Google</button>
           </li>
           <li class="item">
             <lable>Email 로그인</lable>
@@ -22,13 +22,15 @@
               <input type="text" id="email" placeholder="Enter email" />
               <small>Password</small>
               <input type="text" id="password" placeholder="Enter password" />
-              <button class="btn" type="submit">로그인</button>
-              <button class="btn" type="submit">회원 가입</button>
+              <div id="buttons">
+                <button class="btn" id="signin" type="submit">로그인</button>
+                <button class="btn" id="signup" type="submit">회원 가입</button>
+              </div>
             </form>
           </li>
         </ul>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
